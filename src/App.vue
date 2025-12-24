@@ -3,7 +3,7 @@
 		<span>Заповядайте на баницата! Моля, не бъдете лакоми, количествата са ограничени!</span>
 	</div>
 	<div class="banitza">
-		<img :class="[spin ? 'banitza-anim' : '', 'banitza-img']" :src="`../src/assets/${lucks.length}.png`"
+		<img :class="[spin ? 'banitza-anim' : '', 'banitza-img']" :src="`${lucks.length}.png`"
 			@click="inputOpen = true">
 	</div>
 	<div v-if="inputOpen" class="mask">
